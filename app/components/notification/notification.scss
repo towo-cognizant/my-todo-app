@@ -1,0 +1,12 @@
+@use '@/colors.scss';
+
+.Notification {
+  border: 1 solid colors.$dimmed;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em 0;
+
+  &.success { border-color: #4d4; color: #4d4; }
+  &.warning { border-color: #dd4; color: #dd4; }
+  &.error { border-color: #f66; color: #f66; }
+}

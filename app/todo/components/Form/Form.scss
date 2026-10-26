@@ -1,0 +1,45 @@
+@use '@/colors.scss';
+
+.Form {
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+
+    input[type=text] {
+        // background: none;
+        // border: none;
+        // border-bottom: 1px solid colors.$dimmed;
+        // border-radius: 16px;
+        // color: inherit;
+        flex: 1 0 0;
+        // font-size: 2em;
+        // line-height: 1em;
+        // height: 1em;
+        // padding: 8px 16px;
+        width: 0;
+
+        &:focus {
+            background: colors.$highlight;
+            outline: none;
+        }
+    }
+
+    input[type=submit], input[type=button] {
+        // background: colors.$dimmed;
+        // border: none;
+        // border-radius: 16px;
+        // color: colors.$background;
+        // font-weight: bold;
+        //height: 2.6666666em; // 2 16/24 // 2 2/3
+        //width: 48px;
+
+        &:disabled {
+            background-color: colors.$highlight;
+        }
+
+        &:focus {
+            background-color: colors.$foreground;
+            outline: none;
+        }
+    }
+}

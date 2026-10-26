@@ -1,0 +1,45 @@
+@use '@/colors';
+
+.Modal {
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+  inset: 0;
+  place-items: center;
+  position: fixed;
+
+  &.open {
+    display: grid;
+  }
+
+  > .content {
+    background-color: colors.$foreground;
+    box-sizing: border-box;
+    color: colors.$background;
+    min-width: 240px;
+    padding: 1em;
+
+    > header {
+      border-bottom: 1px solid colors.$background;
+      align-items: center;
+      display: flex;
+      gap: 1em;
+      padding-bottom: .5em;
+
+      h3 {
+        flex-grow: 1;
+        line-height: 1em;
+        margin: 0;
+        padding: 0;
+      }
+
+      button {
+        margin: 0;
+        padding-top: 0; 
+
+        &:focus, &:hover {
+          background-color: colors.$dimmed;
+        }
+      }
+    }
+  }
+}

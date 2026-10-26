@@ -1,0 +1,7 @@
+@use '@/colors';
+
+.TaskList {
+    border: 1px solid colors.$dimmed;
+    border-radius: 32px;
+    padding: 32px;
+}

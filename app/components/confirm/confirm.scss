@@ -1,0 +1,22 @@
+@use '@/colors';
+
+.Confirm {
+  .content {
+    footer {
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      justify-content: space-around;
+
+      button {
+        font-size: 1rem;
+        padding: .5em 1em;
+        width: auto;
+
+        &:focus, &:hover {
+          background-color: colors.$dimmed;
+        }
+      }
+    }
+  }
+}
